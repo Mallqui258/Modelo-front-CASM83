@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación CASM109</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="app" class="app-container theme-professional">
+        <!-- Header -->
+        <header class="header sticky top-0 z-50 text-white py-4 shadow-md">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    Evaluación de Perfiles Profesionales
+                </h1>
+                <button id="settingsBtn" class="p-2 rounded-full hover:bg-opacity-20 hover:bg-white transitioon-all">
+                    <i class="fas fa-cog text-xl"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Preguntas del 105 al 117 -->
+         <main class="container mx-auto px-4 py-8">
+            <!-- Preguntas -->
+            <div id="questionsScreens" class="fade-in">
+                <div class="max-w-2xl mx-auto card rounded-lg shadow-lg p-8 mb-8">
+                    <h2 class="text-2xl font-bold mb-6 text-center">Marca las alternativas de cada pregunta, no hay respuestas incorrectas</h2>
+                    <!--105-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">105.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q105A" type="checkbox" name="q105[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le gusta pryectar la extracción de metales de una mina.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q105B" type="checkbox" name="q105[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere estudiar el nombre de los medicamentos y su ventaja comercial.</span>
+                        </label>
+                    </div>
+                    <!--106-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">106.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q106A" type="checkbox" name="q106[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le gusta descifrar los diseños y escritos de culturas muy antiguas.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q106B" type="checkbox" name="q106[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere persuadir a la gente para que compre un producto.</span>
+                        </label>
+                    </div>
+                    <!--107-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">107.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q107A" type="checkbox" name="q107[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le agrada el estudio de los mecanismos de la visión y de sus enfermedades.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q107B" type="checkbox" name="q107[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere vender cosas.</span>
+                        </label>
+                    </div>
+                    <!--108-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">108.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q108A" type="checkbox" name="q108[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le gustaría ganarse la vida escribiendo para un diario o revista.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q108B" type="checkbox" name="q108[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere estudiar el mercado y descubre el producto de mayor demanda.</span>
+                        </label>
+                    </div>
+                    <!--109-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">109.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q109A" type="checkbox" name="q109[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le gusta actuar, representando a distintos personajes.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q109B" type="checkbox" name="q109[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Le agrada más tener su propio negocio.</span>
+                        </label>
+                    </div>
+                    <!--110-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">110.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q110A" type="checkbox" name="q110[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le gusta sentirse importante sabiendo que de Ud. depende la rapídez o la lentitud de una solicitud.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q110B" type="checkbox" name="q110[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere trabajar en un bazar.</span>
+                        </label>
+                    </div>
+                    <!--111-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">111.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q111A" type="checkbox" name="q111[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le gusta planificar presupuestos para una empresa local o a nivel nacional. </span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q111B" type="checkbox" name="q111[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere el negocio de una bodega o tienda de abarrotes.</span>
+                        </label>
+                    </div>
+                    <!--112-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">112.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q112A" type="checkbox" name="q112[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le interesa mucho utilizar sus conocimientos en la construcción de armamentos.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q112B" type="checkbox" name="q112[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere organizar empresas de finanzas y comercio.</span>
+                        </label>
+                    </div>
+                    <!--113-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">113.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q113A" type="checkbox" name="q113[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le agrada llevar la contabilidad de una empresa o negocio.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q113B" type="checkbox" name="q113[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere hacer plantillas de pago para los trabajadores de una empresa o institución.</span>
+                        </label>
+                    </div>
+                    <!--114-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">114.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q114A" type="checkbox" name="q114[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le agrada escribir cartas y luego hacer tantas correciones como sean necesarias.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q114B" type="checkbox" name="q114[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere ser incorporado como miembro de la corporación nacional de comercio.</span>
+                        </label>
+                    </div>
+                    <!--115-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">115.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q115A" type="checkbox" name="q115[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le gusta asumir la defensa legal de una persona acusada de asesinato.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q115B" type="checkbox" name="q115[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere ser incorporado como miembro ejecutivo de la bolsa de valores.</span>
+                        </label>
+                    </div>
+                    <!--116-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">116.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q116A" type="checkbox" name="q116[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le agrada vestir todos los días muy formalmente (con terno y corbata por ejemplo).</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q116B" type="checkbox" name="q116[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere reservar esa vestimenta para ciertas ocasiones.</span>
+                        </label>
+                    </div>
+                    <!--117-->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium mb-3">117.</h3>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q117A" type="checkbox" name="q117[]" value="A" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>a) Le gusta evaluar la producción laboral de un grupo de trabajadores.</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg border hover:bg-gray-50 cursor-pointer">
+                            <input id="q117B" type="checkbox" name="q117[]" value="B" class="mr-3">
+                            <!--input type="radio" name="gender" value="male" class="mr-3"-->
+                            <span>b) Prefiere planear, previa investigación, la acusación de un sujeto que ha actuado en contra de la ley.</span>
+                        </label>
+                    </div>
+                    
+                    <div  class="py-5 flex items-center justify-between gap-3">
+                        <a id="continueTestBtn" class="btn-primary btn-hover px-8 py-3 rounded-lg text-white font-bold transition-all duration-300" href="preguntas8.html">
+                            Atrás
+                        </a>
+                        <a id="continueTestBtn" class="btn-primary btn-hover px-8 py-3 rounded-lg text-white font-bold transition-all duration-300" href="preguntas10.html">
+                            Siguiente
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </main>
+
+         <!-- Settings Modal -->
+          <div id="settingsModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+            <div class="card rounded-lg shadow-lg p-6 max-w-md w-full mx-4">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-bold">Configuración</h3>
+                    <button id="closeSettingsBtn" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="font-medium mb-3">Estilo visual</h4>
+                    <div class="space-y-3">
+                        <label class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="theme" value="professional" class="mr-3" checked>
+                            <span>Profesional / Corporativo</span>
+                        </label>
+                        <label class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="theme" value="minimalist" class="mr-3">
+                            <span>Minimalista Moderno</span>
+                        </label>
+                        <label class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="theme" value="dark" class="mr-3">
+                            <span>Modo Oscuro / Alto Contraste</span>
+                        </label>
+                        <label class="flex items-center p-2 rounded hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="theme" value="colorful" class="mr-3">
+                            <span>Colorido / Lúdico</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <button id="saveSettingsBtn" class="btn-primary btn-hover px-4 py-2 rounded text-white font-medium" href="preguntas1.html">
+                        Guardar Configuración
+                    </button>
+                </div>
+            </div>
+          </div>
+
+          <!-- Toast Notifications -->
+           <div id="toastContainer" class="fixed bottom-4 right-4 z-50"></div>
+    </div>
+
+    <!-- Lógica de esta vista -->
+     <script src="modal.js" defer></script>
+</body>
+</html>
